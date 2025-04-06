@@ -11,8 +11,10 @@ import { LinearGradient } from "expo-linear-gradient";
 import Animated, { FadeInDown } from "react-native-reanimated";
 import { theme } from "../constants/theme";
 import React from "react";
+import { useRouter } from "expo-router";
 
 const WelcomeScreen = () => {
+  const router = useRouter();
   return (
     <View style={styles.container}>
       <StatusBar hidden />
@@ -47,7 +49,7 @@ const WelcomeScreen = () => {
             Every Pixel Tells A Story
           </Animated.Text>
           <Animated.View entering={FadeInDown.delay(600).springify()}>
-            <Pressable style={styles.Btn}>
+            <Pressable onPress={() => router.push("home")} style={styles.Btn}>
               <Text style={styles.btnText}>Explore</Text>
             </Pressable>
           </Animated.View>
