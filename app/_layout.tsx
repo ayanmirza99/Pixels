@@ -10,6 +10,14 @@ const Layout = () => {
         <Stack>
           <Stack.Screen name="index" options={{ headerShown: false }} />
           <Stack.Screen name="home/index" options={{ headerShown: false }} />
+          <Stack.Screen
+            name="home/ImageScreen"
+            options={{
+              headerShown: false,
+              animation: "fade",
+              presentation: "transparentModal",
+            }}
+          />
         </Stack>
       </BottomSheetModalProvider>
     </GestureHandlerRootView>

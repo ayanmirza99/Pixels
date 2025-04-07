@@ -4,7 +4,7 @@ import React from "react";
 import ImageCard from "./ImageCard";
 import { wp } from "@/helpers/common";
 
-const ImageGrid = ({ data }: { data: any[] }) => {
+const ImageGrid = ({ data  }: { data: any[] }) => {
   return (
     <View style={styles.container}>
       <MasonryFlashList

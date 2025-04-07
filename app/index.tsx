@@ -49,7 +49,7 @@ const WelcomeScreen = () => {
             Every Pixel Tells A Story
           </Animated.Text>
           <Animated.View entering={FadeInDown.delay(600).springify()}>
-            <Pressable onPress={() => router.push("home")} style={styles.Btn}>
+            <Pressable onPress={() => router.push("/home")} style={styles.Btn}>
               <Text style={styles.btnText}>Explore</Text>
             </Pressable>
           </Animated.View>
