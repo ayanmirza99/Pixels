@@ -1,4 +1,5 @@
 import { Dimensions } from "react-native";
+import Toast from "react-native-toast-message";
 
 const { height: deviceHeight, width: deviceWidth } = Dimensions.get("window");
 
@@ -22,4 +23,17 @@ export const getImageHeight = (height, width) => {
 export const capitalize = (str) => {
   if (!str) return "";
   return str.replace(/\b\w/g, (char) => char.toUpperCase());
+};
+
+export const showSuccessToast = (message) => {
+  Toast.show({
+    type: "success",
+    text1: message,
+  });
+};
+export const showErrorToast = (message) => {
+  Toast.show({
+    type: "error",
+    text1: message,
+  });
 };

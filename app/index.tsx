@@ -40,7 +40,7 @@ const WelcomeScreen = () => {
             entering={FadeInDown.delay(400).springify()}
             style={styles.title}
           >
-            Pixels
+            Pixora
           </Animated.Text>
           <Animated.Text
             entering={FadeInDown.delay(500).springify()}
@@ -50,7 +50,7 @@ const WelcomeScreen = () => {
           </Animated.Text>
           <Animated.View entering={FadeInDown.delay(600).springify()}>
             <Pressable onPress={() => router.push("/home")} style={styles.Btn}>
-              <Text style={styles.btnText}>Explore</Text>
+              <Text style={styles.btnText}>Start Exploring</Text>
             </Pressable>
           </Animated.View>
         </View>

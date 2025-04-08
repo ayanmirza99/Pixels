@@ -1,7 +1,7 @@
 import React from "react";
 import { FlatList, Pressable, StyleSheet, Text, View } from "react-native";
 import { categoriesList } from "../constants/data";
-import { wp } from "@/helpers/common";
+import { capitalize, wp } from "@/helpers/common";
 import { theme } from "@/constants/theme";
 import Animated, { FadeInRight } from "react-native-reanimated";
 
@@ -60,7 +60,7 @@ const CategoryItem = ({
           },
         ]}
       >
-        <Text style={[styles.categoryTitle]}>{title}</Text>
+        <Text style={[styles.categoryTitle]}>{capitalize(title)}</Text>
       </Pressable>
     </Animated.View>
   );

@@ -154,7 +154,7 @@ const HomeScreen = () => {
     <View style={[styles.container, { paddingTop }]}>
       <View style={styles.header}>
         <Pressable onPress={handleScrollUp}>
-          <Text style={styles.title}>Pixels</Text>
+          <Text style={styles.title}>Pixora</Text>
         </Pressable>
         <Pressable onPress={openFiltersModal}>
           <FontAwesome6
